@@ -1,0 +1,569 @@
+.myBody{
+    background-image:url(../img/backgroundimgz.jpeg);
+    background-position: center;
+    box-sizing: border-box;
+}
+.logo{
+    width: 100px;
+    margin: 0%;
+    padding: 0%;
+}
+.linkUB{
+    text-decoration: none;
+    font-size: 30px;
+    color: wheat; 
+}
+.imgUB{
+    width: 250px;
+    margin: 10px;
+    height: 250px;
+    border: solid 6px black;
+}
+.cajaGeneros{
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.imgBadb{
+    width: 250px;
+    margin: 10px;
+    height: 250px;
+    border: solid 6px black;
+}
+.cajaUB{
+    display: flex;
+    justify-content: center;
+}
+.imgDuki{
+    width: 250px;
+    margin: 10px;
+    height: 250px;
+    border: solid 6px black;
+}
+.h2Generos{
+    font-size: 40px;
+}
+.cajavideo{
+    display: flex;
+    justify-content: center;
+}
+.videogenero{
+    justify-content: center;
+    
+}
+.cajaArtistas{
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    width: 700px;
+    padding: 50px;
+}
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.links{
+    color: wheat;
+    padding: 3px;
+    margin: 5px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: 50px;
+
+}
+.cajalink{
+    display: flex;
+    justify-content: center;
+    height: 62px;
+    align-items: center;
+}
+.claselinks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.myFooter{
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    margin-left: 650px;
+    margin-top: 105px;
+}
+.participantes{
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgba(29, 31, 31, 0.589)
+}
+.cancionespopulares{
+    color: aquamarine;
+    text-align: center;
+    margin: 10px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.article{
+    display: flex;
+}
+.img{
+    height: 300px;
+    width: 250px;
+    margin: 10px;
+}
+.canciones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h3{
+    color: wheat;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+p{
+    color: wheat;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.Paulo{
+    height: 400px;
+    width: 400px;
+    align-self: center;
+    margin-bottom: 10px;
+}
+.divmayor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.nombrepaulo{
+    align-self: center;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+.listatemaspaulo{
+    align-self: center;
+    margin-bottom: 10px;
+    color: bisque;
+    text-decoration: none;
+}
+.cant{
+    text-decoration: none;
+}
+.cajaarticle{
+    display: flex;
+    justify-content: space-evenly;
+}
+.img912{
+    height: 250px;
+    width: 250px;
+}
+.imghomerun{
+    width: 500px;
+    height: 500px;
+}
+.homerun1{
+    font-size: 70px;
+    text-decoration: none;
+}
+
+.divpaulo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.nombrepaulo1{
+    align-self: center;
+    color: #f7b439;
+    font-size: 30px;
+    text-decoration: none;
+}
+.UrbanoLatino{
+    align-self: center;
+    color: #f7b439;
+    font-size: 20px;
+    text-decoration: none;
+}
+.fecha{
+    align-self: center;
+    color:#f7b439;
+    font-size: 10px;
+}
+.lista{
+    text-decoration: none;
+    color: greenyellow;
+    font-size: 18px;
+    display: flex;
+}
+.item{
+    padding: 3px;
+}
+.myMain{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+h6{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: bisque;
+    text-align: justify;
+    background-color: black;
+    border: solid 3px white;
+    font-size: 15px;
+}
+.seguir{
+    color: antiquewhite;
+    text-decoration: none;
+}
+.mweb{
+    text-align: center;
+    padding: 0%;
+    margin: 0%;
+}
+.fa-solid{
+    font-size: 60px;
+    color: bisque;
+}
+h1{
+    color: aqua;
+}
+.playlist{
+    text-decoration: none;
+    color: antiquewhite;
+}
+.logofoot{
+    height: 150px;
+    width: 150px;
+}
+.divf1{
+    background-color: rgba(29, 31, 31, 0.589)
+}
+.gotop1{
+    text-decoration: none;
+    color: antiquewhite;
+}
+.gotop{
+    display: flex;
+    justify-content: flex-end;
+}
+a{
+    text-decoration: none;
+}
+.letras{text-decoration: none; color: beige;}
+.dsa{
+    text-decoration:none;
+    color: antiquewhite;
+    text-align: center;
+}
+
+.dsT{
+    text-align: center;
+}
+.dsT2{ 
+    text-align: center;
+}
+.searchresults{
+    text-align: center;
+}
+.videosolo{ 
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+.letras{
+    text-align: center;
+    color: antiquewhite;
+}
+.listasSR{
+    color: antiquewhite;
+}
+.mayorsr{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.leer{
+    background-color: #5d695d;
+    border: none;
+    padding: 15px 32px;
+    border-radius: 40px;
+    align-self: center;
+    font-size: 13px;
+    box-shadow: 0px 0px 10px 0px #5d695d;
+    text-decoration: none;
+    width: 60px;
+
+}
+.nombreDisco{
+    color:indianred;
+    font-size: 35px;
+}
+
+.nombreArtista{
+    color:indianred;
+    font-size: 20px;
+}
+
+.nombreGenero{
+    color:indianred;
+    font-size: 18px;
+}
+.fechaDeEstreno{
+    color:indianred;
+    font-size: 17px;
+}
+.temasAlbum{
+    color: #f7b439;
+    font-size: 20px;
+}
+.tituloAlbum{
+    font-size: 25px;
+    color:bisque;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center ;
+}
+.botonFav{
+    color: darkred;
+}
+.listaAA{
+    justify-items: center;
+    justify-self: center;
+}
+ul{
+    list-style-type: none; 
+    text-align: center;
+}
+.detalles1{
+    text-decoration: underline ;
+    color:white;
+}
+.albums{
+    color: wheat;
+}
+.articleCanciones{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.nombrecancion{
+    font-size: 15px;
+}
+img{
+    width: 190px;
+    height: 190px;
+}
+.nc{
+    display: flex;
+    flex-wrap: wrap;
+}
+.padre{
+    text-align: center;
+}
+.articleAlbum{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+.articleCantantes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.tituloAlbum{
+    font-size: 15px;
+}
+.imgAlbum{
+    width: 250px;
+    height: 250px;
+}
+#busqueda{
+    color: wheat;
+}
+.articleS{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.divS{
+    padding: 10px;
+}
+
+
+
+
+
+
+
+@media (max-width: 430px){
+    .header{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        font-family: 'Roboto Condensed', sans-serif;
+        width: 1000px;
+    }
+    .divcajalogo{
+        width: 100px;
+        height: 200px;
+    }
+    .logo{
+        width: 75px;
+    }
+    .mweb{
+        text-align: center;
+        font-size: 12px;
+    }
+    .links{
+        font-size: 30px;
+    }
+    .myBody{
+        width: 1000px;
+    }
+    .myMain{
+        width: 1000px;
+    }
+    .canciones{
+        width: 260px;
+    }
+    .imghomerun{
+        width: 400px;
+        height: 400px;
+    }
+    .homerun1{
+        font-size: 30px;
+    }
+    .nombrepaulo1{
+        font-size: 22px;
+    }
+    .UrbanoLatino{
+        font-size: 18px;
+    }
+    .lista{
+        font-size: 8px;
+    }
+    .divpaulo{
+        padding: 0%;
+        margin: 0%;
+        justify-content: flex-start;
+    }
+    .myFooter{
+        width: 1000px;
+        padding: 0%;
+        margin: 0%;
+    }
+    .Paulo{
+        width: 400px;
+        height: 400px;
+    }
+    .article{
+        width: 1000px;
+    }
+    .section{
+        width: 1000px;
+    }
+    .gotop{
+        display: flex;
+        justify-content: center;
+    }
+    .sr4{
+        font-size: 12px;
+    }
+
+    
+}
+
+.leer{
+    background-color: #5d695d;
+    border: none;
+    padding: 15px 32px;
+    border-radius: 40px;
+    align-self: center;
+    font-size: 13px;
+    box-shadow: 0px 0px 10px 0px #5d695d;
+    text-decoration: none;
+    width: 60px;
+
+}
+
+a{
+    color: wheat;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.generoDetalleG{
+    color: wheat;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.sectionDG{
+
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+
+}
+.nombreGenero{
+
+    
+    font-size: 15px;
+    text-align: center;
+}
+
+.h2Generos{
+    text-align: center;
+    color: aquamarine;
+    margin: 10px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.nombreGen{
+    text-align: center;
+    color: aquamarine;
+    margin: 10px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.tDG{
+    text-align: center;
+}
+
+
+.sectionDG{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.pDG{
+    text-align: center;
+}
+.h2G{
+    text-align: center;
+    font-size: 35px;
+    color: aquamarine;
+    margin: 10px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+#generosid{
+    text-align: center;
+    font-size: 35px;
+    color: aquamarine;
+    margin: 10px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.artistas1{
+    color: aquamarine;
+}
+
+
+
