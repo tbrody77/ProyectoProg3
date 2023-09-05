@@ -564,6 +564,30 @@ a{
 .artistas1{
     color: aquamarine;
 }
-
-
-
+.trackbox{
+    color: white;
+    background-color: rgba(96, 96, 96, 0.4);
+    margin: 70px;
+    padding: 15px;
+    border: 3px solid rgb(124, 124, 124);
+    width: 380px;
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+.boton{
+    font-family: 'Raleway', sans-serif;
+    background-color: white;
+    }
+.nombretema{
+    font-family: 'Raleway', sans-serif;
+    color: lightgrey;
+    text-decoration: none;
+    }
+.albumde{
+    font-family: 'Raleway', sans-serif;
+    color: lightgrey;
+    text-decoration: none;
+    }
