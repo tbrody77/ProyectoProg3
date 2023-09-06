@@ -15,7 +15,7 @@ function Title(){
     </div>
     <div className="cajaforms">
         <form className="form" action="./search-results.html" method="GET">
-            <input type="text" id="navegador" name="search" value="" placeholder="Buscar por título"></input>
+            <input type="text" id="navegador" name="search" placeholder="Buscar por título"></input>
             <button type="submit">
              <i className="fas fa-search"></i>
             </button>
