@@ -5,23 +5,35 @@ class Home extends Component {
     super();
     this.state = {
       canciones: [],
+      albums:[]
     };
   }
 
   componentDidMount() {
-    fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart')
+    fetch('https://thingproxy.freeboard.io/fetch/https://api.deezer.com/chart/0/tracks&top?limit=5')
       .then((response) => response.json())
       .then((data) => {
-        this.setState({ canciones: data.albums.data});
+        this.setState({ canciones: data.data});
       })
       .catch((error) => {
         console.log('El error es' + error);
       });
+    fetch('https://thingproxy.freeboard.io/fetch/https://api.deezer.com/chart/0/albums&top?limit=5')
+      .then((response)=>response.json())
+      .then((data)=>{
+        console.log(data);
+        this.setState({albums: data.data})
+      })
+      .catch((error)=>{
+        console.log('El error es' + error);
+      })
   }
 
   render() {
+    
     const { canciones } = this.state;
-
+    const{albums} = this.state
+    console.log(albums);
     return (
       <section>
         <h2 className="cancionespopulares">CANCIONES POPULARES</h2>
@@ -30,9 +42,9 @@ class Home extends Component {
             return (
               <div className="padre" key={cancion.id}>
                 <a href="./detailsong.html" className="cancion">
-                  <img src="" alt="" />
+                  <img src={cancion.album.cover} alt="" />
                   <p className="nombrecancion">{cancion.title}</p> <br />
-                  <p className="cantante">{cancion.name}</p>
+                  <p className="cantante">{cancion.artist.name}</p>
                 </a>
               </div>
             );
@@ -41,16 +53,21 @@ class Home extends Component {
 
         <h2 className="cancionespopulares">ALBUMES POPULARES</h2>
         <article className="articleAlbum">
-          <div className="padre1">
-            <a href="./detail-album.html" className="album">
-              <img src="" alt="" />
-              <p className="tituloAlbum"></p> <br />
-              <p className="albumDe"></p>
+          {albums.map((album)=>{
+            return(
+            <div className="padre1">
+              <a href="./detail-album.html" className="album">
+              <img src={album.cover} alt="" />
+              <p className="tituloAlbum">{album.title}</p> <br />
+              <p className="albumDe">{album.artist.name}</p>
             </a>
           </div>
+            )
+          })}
+          
         </article>
 
-        <h2 className="cancionespopulares">CANTANTES POPULARES</h2>
+        {/* <h2 className="cancionespopulares">CANTANTES POPULARES</h2>
         <article className="articleCantantes">
           <div className="cantantesPopulares">
             <a href="./detail-artist.html" className="canciones">
@@ -58,7 +75,7 @@ class Home extends Component {
               <p className="nombreCantante"></p> <br />
             </a>
           </div>
-        </article>
+        </article> */}
       </section>
     );
   }
