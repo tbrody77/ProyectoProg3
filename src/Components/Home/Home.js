@@ -31,8 +31,8 @@ class Home extends Component {
               <div className="padre" key={cancion.id}>
                 <a href="./detailsong.html" className="cancion">
                   <img src="" alt="" />
-                  <p className="nombrecancion"></p> <br />
-                  <p className="cantante"></p>
+                  <p className="nombrecancion">{cancion.title}</p> <br />
+                  <p className="cantante">{cancion.name}</p>
                 </a>
               </div>
             );
