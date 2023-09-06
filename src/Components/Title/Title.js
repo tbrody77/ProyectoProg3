@@ -1,6 +1,6 @@
 import React from "react";
 import logo from '../../img/punk_PNG10.png'
-
+import { Link } from 'react-router-dom';
 
 function Title(){
     return(  <header className="header">
@@ -9,9 +9,11 @@ function Title(){
         <p className="mweb">MSOUND</p>
     </div>
     <div className="claselinks">
-        <div className="cajalink"><a href="./home.html" className="links">HOME</a></div>
-        <div className="cajalink"><a href="./playlist.html" className="links">PLAYLIST</a></div>
-        <div className="cajalink"><a href="./genres.html" className="links">GENEROS</a></div>
+        <div className="cajalink"><Link to="/" className="links">HOME  |</Link></div>
+        <div className="cajalink"><Link to="/canciones" className="links">CANCIONES  |</Link></div>
+        <div className="cajalink"><Link to="/albums" className="links">ALBUMS  |</Link></div>
+        <div className="cajalink"><Link to="/favoritos" className="links">TUS FAVORITOS</Link></div>
+        
     </div>
     <div className="cajaforms">
         <form className="form" action="./search-results.html" method="GET">
