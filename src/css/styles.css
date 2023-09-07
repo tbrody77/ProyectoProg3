@@ -354,6 +354,9 @@ ul{
     flex-direction: row;
     justify-content: space-around;
 }
+.padre{
+    text-align: center;
+}
 .nombrecancion{
     font-size: 15px;
 }
@@ -364,9 +367,6 @@ img{
 .nc{
     display: flex;
     flex-wrap: wrap;
-}
-.padre{
-    text-align: center;
 }
 .articleAlbum{
     display: flex;
