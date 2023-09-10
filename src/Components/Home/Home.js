@@ -1,5 +1,9 @@
 import React, { Component } from "react";
- 
+import { Link } from 'react-router-dom';
+import Boton from "../Boton/Boton";
+import CancionesItem from "../CancionesItem/CancionesItem";
+
+
 class Home extends Component {
   constructor() {
     super();
@@ -40,13 +44,7 @@ class Home extends Component {
         <article className="articleCanciones">
           {canciones.map((cancion) => {
             return (
-              <div className="padre" key={cancion.id}>
-                <a href="./detailsong.html" className="cancion">
-                  <img src={cancion.album.cover} alt="" />
-                  <p className="nombrecancion">{cancion.title}</p> <br />
-                  <p className="cantante">{cancion.artist.name}</p>
-                </a>
-              </div>
+              <CancionesItem cancion = {cancion}></CancionesItem>
             );
           })}
         </article>
@@ -56,26 +54,16 @@ class Home extends Component {
           {albums.map((album)=>{
             return(
             <div className="padre1">
-              <a href="./detail-album.html" className="album">
+              <Link to={'/adetail/${album.id}'} className="album">
               <img src={album.cover} alt="" />
               <p className="tituloAlbum">{album.title}</p> <br />
               <p className="albumDe">{album.artist.name}</p>
-            </a>
+            </Link>
           </div>
             )
           })}
           
         </article>
-
-        {/* <h2 className="cancionespopulares">CANTANTES POPULARES</h2>
-        <article className="articleCantantes">
-          <div className="cantantesPopulares">
-            <a href="./detail-artist.html" className="canciones">
-              <img src="" alt="" />
-              <p className="nombreCantante"></p> <br />
-            </a>
-          </div>
-        </article> */}
       </section>
     );
   }

@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
-class Tdetail extends Component {
+class Adetail extends Component {
   constructor() {
     super();
     this.state = {
-      canciones: []
+      albumes: []
     };
   }
 
@@ -14,7 +14,7 @@ class Tdetail extends Component {
     fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart')
       .then((response) => response.json())
       .then((data) => {
-        this.setState({ canciones: data.albums.data });
+        this.setState({ albumes: data.albums.data });
       })
       .catch((error) => {
         console.log('El error es' + error);
@@ -22,23 +22,23 @@ class Tdetail extends Component {
   }
 
   render() {
-    const { canciones } = this.state;
+    const { albumes } = this.state;
 
     return (
       <article className="trackbox">
-        {canciones.map((cancion) => {
+        {albumes.map((album) => {
           return (
-            <div key={cancion.id}>
-              <img src={cancion.album.cover} alt="" className="fotoback track" />
+            <div key={album.id}>
+              <img src={album.album.cover} alt="" className="fotoback track" />
               {/* <a href="./detail-artist.html" className="nombretema"> */}
-                <br /> {cancion.title}
+                <br /> {album.title}
               {/* </a> */}
               <br />
-              <Link to={'/adetail/${cancion.album.id}'} className="albumde">
-                <br /> {cancion.album.title}
+              <Link to={'/adetail/${album.album.id}'} className="albumde">
+                <br /> {album.album.title}
               </Link>
               <br />
-              <iframe
+              {/* <iframe
                 style={{ borderRadius: '12px' }}
                 src={`https://open.spotify.com/embed/track/${cancion.id}?utm_source=generator&theme=0`}
                 width="100%"
@@ -46,7 +46,7 @@ class Tdetail extends Component {
                 frameBorder="0"
                 allowFullScreen=""
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              ></iframe>
+              ></iframe> */}
               <br />
               <br />
             </div>
@@ -58,4 +58,4 @@ class Tdetail extends Component {
   }
 }
 
-export default Tdetail;
+export default Adetail;
