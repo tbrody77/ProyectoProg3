@@ -53,7 +53,7 @@ favoritos(id){
 
         render () {
                     return (<div className="padre" key={this.props.cancion.id}>
-                    <Link to={'/tdetail/${cancion.id}'} className="cancion">
+                    <Link to={`/tdetail/${this.props.cancion.id}`} className="cancion">
                     <img src={this.props.cancion.album.cover} alt="" />
                     <p className="nombrecancion">{this.props.cancion.title}</p> <br />
                     <p className="cantante">{this.props.cancion.artist.name}</p>
