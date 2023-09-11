@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
+
 class Tdetail extends Component {
   constructor(props) {
     super(props);
@@ -18,8 +19,7 @@ class Tdetail extends Component {
         this.setState({ cancion: data });
         let recuperoStorage = localStorage.getItem('favoritos');
         if (recuperoStorage !== null){
-
-        if(recuperoStorage.includes(this.props.cancion.id)){   
+        if(recuperoStorage.includes(this.props.data.id)){   
             this.setState({
                 textoBoton: "Quitar de favoritos"
             })
@@ -79,22 +79,14 @@ class Tdetail extends Component {
                 <br /> {cancion.album.title}
               </Link>
               <br />
-              <iframe
-                style={{ borderRadius: '12px' }}
-                src={`https://open.spotify.com/embed/track/${cancion.id}?utm_source=generator&theme=0`}
-                width="100%"
-                height="80"
-                frameBorder="0"
-                allowFullScreen=""
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              ></iframe>
+              <div>{cancion.preview}</div>
               <br />
               <br />
             </div>
             <button onClick={()=> this.favoritos(cancion.id)}> {this.state.textoBoton}</button>
               </>
               
-            ): <p>loading...</p>}
+            ): <p>Loading...</p>}
             
           
         

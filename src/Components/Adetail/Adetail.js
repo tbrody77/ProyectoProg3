@@ -5,7 +5,7 @@ class Adetail extends Component {
   constructor() {
     super();
     this.state = {
-      album: []
+      album: null
     };
   }
 
@@ -28,30 +28,25 @@ class Adetail extends Component {
 
     return (
       <article className="trackbox">
-        
-
+        {this.state.album ?(
             <div key={album.id}>
-              <img src={album.cover} alt="" className="fotoback track" />
-              {/* <a href="./detail-artist.html" className="nombretema"> */}
-                <br /> {album.title}
-              {/* </a> */}
-              <br />
-              <Link to={'/adetail/${album.album.id}'} className="albumde">
-                <br /> {album.title}
-              </Link>
-              <br />
-              {/* <iframe
-                style={{ borderRadius: '12px' }}
-                src={`https://open.spotify.com/embed/track/${cancion.id}?utm_source=generator&theme=0`}
-                width="100%"
-                height="80"
-                frameBorder="0"
-                allowFullScreen=""
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              ></iframe> */}
-              <br />
-              <br />
-            </div>
+            <img src={album.cover} alt="" className="fotoback track" />
+              <br /> {album.artist.name}
+            <br />
+            <Link to={`/adetail/${album.id}`} className="albumde">
+              <p>Géneros que encontrarás en el album {album.title}:</p>
+               <div>
+                {album.genres.data.map((genero)=><p>{genero.name}</p>)}
+               </div>
+            </Link>
+                <p>{album.genres.release_date}</p>
+                <p>Canciones del Album:</p>
+                {album.tracks.data.map((cancion)=><Link to={`/tdetail/${cancion.id}`}><ul>- {cancion.title}</ul></Link>)}
+          </div>
+          
+        ): <p>Loading...</p>}
+
+            
           
         
       </article>

@@ -29,7 +29,7 @@ class Albums extends Component {
           {albums.map((album)=>{
             return(
             <div className="padre1">
-              <Link to={'/adetail/${album.id}'} className="album">
+              <Link to={`/adetail/${album.id}`} className="album">
               <img src={album.cover} alt="" />
               <p className="tituloAlbum">{album.title}</p> <br />
               <p className="albumDe">{album.artist.name}</p>

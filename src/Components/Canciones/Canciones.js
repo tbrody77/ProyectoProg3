@@ -18,7 +18,9 @@ class Canciones extends Component {
       })
       .catch((error) => {
         console.log('El error es' + error);
-      })}
+      })
+    }
+
       render() {
     
         const { canciones } = this.state;
@@ -29,11 +31,12 @@ class Canciones extends Component {
               {canciones.map((cancion) => {
                 return (
                   <div className="padre" key={cancion.id}>
-                    <Link to={'/tdetail/${cancion.id}'} className="cancion">
+                    <Link to={`/tdetail/${cancion.id}`} className="cancion">
                     <img src={cancion.album.cover} alt="" />
                     <p className="nombrecancion">{cancion.title}</p> <br />
                     <p className="cantante">{cancion.artist.name}</p>
                       </Link>
+                      
                   </div>
                 );
               })}
