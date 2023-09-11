@@ -67,7 +67,7 @@
     font-family: 'Roboto Condensed', sans-serif;
 }
 .links{
-    color: wheat;
+    color: black;
     padding: 3px;
     margin: 5px;
     border-radius: 3px;
@@ -85,26 +85,27 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    color: black
 }
-.myFooter{
+.myFooter {
     font-family: 'Roboto Condensed', sans-serif;
-    width: 100px;
+    width: 100%; /* Cambia el ancho a 100% para ocupar toda la pantalla */
     display: flex;
     justify-content: center;
-    margin-left: 650px;
     margin-top: 105px;
-}
+  }
+  
 .participantes{
     font-family: 'Roboto Condensed', sans-serif;
     width: 300px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: rgba(29, 31, 31, 0.589)
+    background-color: rgba(29, 31, 31, 0.589);
+    color: lightgray
 }
 .cancionespopulares{
-    color: aquamarine;
+    color: rgba(96, 96, 96, 0.4);
     text-align: center;
     margin: 10px;
     font-family: 'Roboto Condensed', sans-serif;
@@ -223,6 +224,7 @@ h6{
     text-align: center;
     padding: 0%;
     margin: 0%;
+    color: black
 }
 .fa-solid{
     font-size: 60px;
@@ -323,7 +325,7 @@ a{
 }
 .tituloAlbum{
     font-size: 25px;
-    color:bisque;
+    color:black;
 }
 .info{
     display: flex;
@@ -359,6 +361,7 @@ ul{
 }
 .nombrecancion{
     font-size: 15px;
+    color: black
 }
 img{
     width: 190px;
@@ -398,12 +401,11 @@ img{
 .divS{
     padding: 10px;
 }
-
-
-
-
-
-
+.cantante{
+    font-family: 'Raleway', sans-serif;
+    color: rgba(19, 19, 19, 0.4);
+    text-decoration: none;
+}
 
 @media (max-width: 430px){
     .header{
@@ -426,6 +428,7 @@ img{
     }
     .links{
         font-size: 30px;
+        color: black
     }
     .myBody{
         width: 1000px;
@@ -586,8 +589,16 @@ a{
     color: lightgrey;
     text-decoration: none;
     }
-.albumde{
+.albumDe{
     font-family: 'Raleway', sans-serif;
-    color: lightgrey;
+    color: rgba(19, 19, 19, 0.4);
     text-decoration: none;
     }
+.body {
+        background-color: #f8f8f8; /* Cambia el color de fondo según tu paleta de colores */
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif; /* Establece la fuente predeterminada para toda la aplicación */
+        color: #333; /* Establece el color de texto predeterminado */
+        /* Otros estilos comunes de la aplicación */
+      }

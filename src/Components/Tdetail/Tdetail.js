@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
-
+import '../../css/styles.css'
 
 class Tdetail extends Component {
   constructor(props) {
@@ -71,11 +71,11 @@ class Tdetail extends Component {
             {this.state.cancion ? (
               <><div key={cancion.id}>
               <img src={cancion.album.cover} alt="" className="fotoback track" />
-              {/* <a href="./detail-artist.html" className="nombretema"> */}
+            
                 <br /> {cancion.title}
-              {/* </a> */}
+              
               <br />
-              <Link to={`/adetail/${cancion.album.id}`} className="albumde">
+              <Link to={`/adetail/${cancion.album.id}`} className="albumDe">
                 <br /> {cancion.album.title}
               </Link>
               <br />

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from 'react-router-dom';
 import CancionesItem from "../CancionesItem/CancionesItem";
+import '../../css/styles.css'
 
 
 class Home extends Component {
@@ -38,9 +39,10 @@ class Home extends Component {
     const { albums } = this.state
     console.log(albums);
     return (
-      <section>
+      <section><br></br>
+      <br></br>
         {this.state.canciones.length > 0 ? (
-          <><h2 className="cancionespopulares">CANCIONES POPULARES</h2>
+          <><h2 className="cancionespopulares">TOP 5 DE CANCIONES</h2>
             <article className="articleCanciones">
               {canciones.map((cancion) => {
                 return (
@@ -48,15 +50,16 @@ class Home extends Component {
                 );
               })}
             </article>
-
-            <h2 className="cancionespopulares">ALBUMES POPULARES</h2>
+<br></br>
+<br></br>
+            <h2 className="cancionespopulares">TOP 5 DE ALBUMES</h2>
             <article className="articleAlbum">
               {albums.map((album) => {
                 return (
                   <div className="padre1">
                     <Link to={`/adetail/${album.id}`} className="album">
                       <img src={album.cover} alt="" />
-                      <p className="tituloAlbum">{album.title}</p> <br />
+                      <p className="tituloAlbum">{album.title}</p>
                       <p className="albumDe">{album.artist.name}</p>
                     </Link>
                   </div>
