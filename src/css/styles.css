@@ -602,3 +602,11 @@ a{
         color: #333; /* Establece el color de texto predeterminado */
         /* Otros estilos comunes de la aplicación */
       }
+.error{
+    font-size: 30px;
+    color: red
+}
+.cargando{
+    font-size: 30px;
+    color: black
+}

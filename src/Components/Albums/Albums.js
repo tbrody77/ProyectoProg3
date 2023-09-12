@@ -24,7 +24,8 @@ class Albums extends Component {
     const{albums} = this.state
     return (
       <section>
-        <h2 className="cancionespopulares">TOP 100 ALBUMS</h2>
+        {this.state.albums.length > 0 ? (
+        <><h2 className="cancionespopulares">TOP 100 ALBUMS</h2>
         <article className="articleAlbum">
           {albums.map((album)=>{
             return(
@@ -38,7 +39,8 @@ class Albums extends Component {
             )
           })}
           
-        </article>
+        </article> </>
+        ):<p className='cargando'>Loading...</p>}
       </section>
     );
   }

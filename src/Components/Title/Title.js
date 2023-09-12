@@ -6,8 +6,10 @@ import Formulario from "../Formulario/Formulario";
 function Title(){
     return(  <header className="header">
     <div className="cajaLogo">
+        <Link to='/'>
         <img src={logo} alt="Logo Proyecto" className="logo"/>
         <p className="mweb">MSOUND</p>
+        </Link>
     </div>
     <div className="claselinks">
         <div className="cajalink"><Link to="/" className="links">HOME  |</Link></div>

@@ -6,6 +6,7 @@ import Tdetail from './Components/Tdetail/Tdetail'
 import Adetail from './Components/Adetail/Adetail'
 import Canciones from './Components/Canciones/Canciones'
 import Albums from './Components/Albums/Albums'
+import Error from './Components/Error/Error'
 import { Route, Switch} from 'react-router-dom';
 import Favoritos from "./Components/Favoritos/Favoritos";
 
@@ -26,7 +27,7 @@ function App() {
           <Route path='/canciones' exact component={Canciones}/>
           <Route path='/albums' component={Albums}/>
           <Route path='/adetail/:id' component={Adetail}/>
-          
+          <Route  component={Error}/>
         </Switch>
       </main>  
       <Footer />
