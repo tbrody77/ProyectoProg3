@@ -8,6 +8,9 @@ import Canciones from './Components/Canciones/Canciones'
 import Albums from './Components/Albums/Albums'
 import { Route, Switch} from 'react-router-dom';
 import Favoritos from "./Components/Favoritos/Favoritos";
+
+
+
 import './css/styles.css'
 
 function App() {
@@ -23,6 +26,7 @@ function App() {
           <Route path='/canciones' exact component={Canciones}/>
           <Route path='/albums' component={Albums}/>
           <Route path='/adetail/:id' component={Adetail}/>
+          
         </Switch>
       </main>  
       <Footer />

@@ -1,6 +1,7 @@
 import React from "react";
 import logo from '../../img/punk_PNG10.png'
 import { Link } from 'react-router-dom';
+import Formulario from "../Formulario/Formulario";
 
 function Title(){
     return(  <header className="header">
@@ -15,14 +16,7 @@ function Title(){
         <div className="cajalink"><Link to="/favoritos" className="links">TUS FAVORITOS</Link></div>
         
     </div>
-    <div className="cajaforms">
-        <form className="form" action="./search-results.html" method="GET">
-            <input type="text" id="navegador" name="search" placeholder="Buscar por título"></input>
-            <button type="submit">
-             <i className="fas fa-search"></i>
-            </button>
-        </form>
-    </div>
+   { <Formulario></Formulario> }
 </header>
 
     )
