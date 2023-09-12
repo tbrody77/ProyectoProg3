@@ -43,6 +43,12 @@ class Home extends Component {
       <br></br>
         {this.state.canciones.length > 0 ? (
           <><h2 className="cancionespopulares">TOP 5 DE CANCIONES</h2>
+          <Link to={`/canciones`}>
+            {/* ver todas */}
+              <button className="albumDe">100 canciones más escuchadas</button> 
+            </Link>
+            <br></br>
+            <br></br>
             <article className="articleCanciones">
               {canciones.map((cancion) => {
                 return (
@@ -53,6 +59,12 @@ class Home extends Component {
 <br></br>
 <br></br>
             <h2 className="cancionespopulares">TOP 5 DE ALBUMES</h2>
+            <Link to={`/albums`}>
+              {/* ver todas */}
+              <button className="albumDe">100 albumes más escuchados</button>
+            </Link>
+            <br></br>
+            <br></br>
             <article className="articleAlbum">
               {albums.map((album) => {
                 return (

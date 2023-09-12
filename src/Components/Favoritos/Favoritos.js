@@ -34,14 +34,19 @@ class Favoritos extends Component{
     }
     render(){
          return(
+            <section>
+                
                 <article className="articleCanciones">
-                    <h1 className='cancionespopulares'>Canciones Favoritas</h1>
+                    {this.state.track.length ? (
+                    <><h1 className='cancionespopulares'>Canciones Favoritas</h1>
                     {this.state.track.map((cancion) => {
                         return (
                         <CancionesItem cancion = {cancion}></CancionesItem>
                         );
-                    })}
+                    })}</>
+                    ):<p className='cargando'> Loading...</p>}
                     </article>
+                    </section>
          )
     }
 }
