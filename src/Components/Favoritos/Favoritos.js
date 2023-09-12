@@ -35,7 +35,7 @@ class Favoritos extends Component{
     render(){
          return(
                 <article className="articleCanciones">
-                    <h1>Canciones Favoritas</h1>
+                    <h1 className='cancionespopulares'>Canciones Favoritas</h1>
                     {this.state.track.map((cancion) => {
                         return (
                         <CancionesItem cancion = {cancion}></CancionesItem>

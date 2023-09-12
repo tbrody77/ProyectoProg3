@@ -69,7 +69,7 @@ class Home extends Component {
             </article>
           </>
 
-        ) : <p>loading...</p>}
+        ) : <p className="cargando">Loading...</p>}
 
       </section>
     );

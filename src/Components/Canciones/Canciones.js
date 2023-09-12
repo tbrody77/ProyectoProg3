@@ -26,7 +26,8 @@ class Canciones extends Component {
         const { canciones } = this.state;
         return (
           <section>
-            <h2 className="cancionespopulares">TOP 100 MUNDIAL</h2>
+            {this.state.canciones.length > 0 ? (
+            <><h2 className="cancionespopulares">TOP 100 MUNDIAL</h2>
             <article className="articleCanciones">
               {canciones.map((cancion) => {
                 return (
@@ -40,7 +41,8 @@ class Canciones extends Component {
                   </div>
                 );
               })}
-            </article>
+            </article></>
+            ):<p className='cargando'>Loading...</p>}
             </section>
     );
   }

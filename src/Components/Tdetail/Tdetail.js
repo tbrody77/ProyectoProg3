@@ -86,7 +86,7 @@ class Tdetail extends Component {
             <button onClick={()=> this.favoritos(cancion.id)}> {this.state.textoBoton}</button>
               </>
               
-            ): <p>Loading...</p>}
+            ): <p className='cargando'>Loading...</p>}
             
           
         
