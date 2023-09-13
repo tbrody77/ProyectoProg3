@@ -17,6 +17,11 @@
     font-size: 30px;
     color: wheat; 
 }
+.imputform{
+    width: 100%; /* Ajusta el ancho del formulario según tus preferencias */
+    margin: 10 auto; /* Centra horizontalmente el formulario */
+    padding: 30px; 
+}
 .imgUB{
     width: 250px;
     margin: 10px;

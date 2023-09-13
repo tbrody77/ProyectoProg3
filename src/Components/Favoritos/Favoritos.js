@@ -41,7 +41,7 @@ class Favoritos extends Component{
 
                 <article className="articleCanciones">
                     {this.state.track.length ? (
-                    <><h1 className='cargando'>Canciones Favoritas</h1>
+                    <><h2 className='cancionespopulares'>Canciones Favoritas</h2>
                     {this.state.track.map((cancion) => {
                         return (
                         <CancionesItem cancion = {cancion}></CancionesItem>

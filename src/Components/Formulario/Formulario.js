@@ -21,8 +21,12 @@ class Formulario extends Component{
 
     render(){
         return(
-                 <form className='form' onSubmit={(event) => this.evitarSubmit(event)}>
+            
+                 <form className='imputform' onSubmit={(event) => this.evitarSubmit(event)}>
+                    <br></br>
+                    <br></br>
                     <label className='nombrecancion'>🔍</label>
+                    
                   <input className='imputForm' placeholder='Buscar por canción o artista:' type='text' onChange={(event)=> this.controlarCambios(event)} value={this.state.valor}/>
            </form>
 
