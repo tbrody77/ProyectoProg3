@@ -7,7 +7,7 @@ class Tdetail extends Component {
     super(props);
     this.state = {
       cancion: null,
-      textoBoton:'Agregar a favoritos'
+      textoBoton:'Agregar a favoritos 👍🏻'
     };
   }
 
@@ -21,7 +21,7 @@ class Tdetail extends Component {
         if (recuperoStorage !== null){
         if(recuperoStorage.includes(this.props.data.id)){   
             this.setState({
-                textoBoton: "Quitar de favoritos"
+                textoBoton: "Quitar de favoritos 👎🏻"
             })
         }
     }
@@ -44,14 +44,14 @@ class Tdetail extends Component {
         arrayFavoritos = arrayFavoritos.filter( unId => unId !== id);
 
         this.setState({
-            textoBoton: "Agregar a Favoritos"
+            textoBoton: "Agregar a Favoritos 👍🏻"
         })
 
 
     } else {
         arrayFavoritos.push(id);
         this.setState({
-            textoBoton: "Quitar de favoritos"
+            textoBoton: "Quitar de favoritos 👎🏻"
         })
     }
 
@@ -70,7 +70,7 @@ class Tdetail extends Component {
           
             {this.state.cancion ? (
               <><div key={cancion.id}>
-              <img src={cancion.album.cover} alt="" className="fotoback track" />
+              <img src={cancion.album.cover} alt="" className="fotobacktrack" />
             
                 <br /> {cancion.title}
               
@@ -86,7 +86,7 @@ class Tdetail extends Component {
             <button onClick={()=> this.favoritos(cancion.id)}> {this.state.textoBoton}</button>
               </>
               
-            ): <p className='cargando'>Loading...</p>}
+            ): <p className='cargando'>Loading... ⏳</p>}
             
           
         

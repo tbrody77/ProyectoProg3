@@ -42,7 +42,7 @@ class Home extends Component {
       <section><br></br>
       <br></br>
         {this.state.canciones.length > 0 ? (
-          <><h2 className="cancionespopulares">TOP 5 DE CANCIONES</h2>
+          <><h2 className="cancionespopulares">🔥 TOP 5 CANCIONES 🔥</h2>
           <Link to={`/canciones`}>
             {/* ver todas */}
               <button className="albumDe">100 canciones más escuchadas</button> 
@@ -58,7 +58,7 @@ class Home extends Component {
             </article>
 <br></br>
 <br></br>
-            <h2 className="cancionespopulares">TOP 5 DE ALBUMES</h2>
+            <h2 className="cancionespopulares">🔥 TOP 5 ALBUMES 🔥</h2>
             <Link to={`/albums`}>
               {/* ver todas */}
               <button className="albumDe">100 albumes más escuchados</button>
@@ -81,7 +81,7 @@ class Home extends Component {
             </article>
           </>
 
-        ) : <p className="cargando">Loading...</p>}
+        ) : <p className="cargando">Loading... ⏳</p>}
 
       </section>
     );

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 class CancionesItem extends Component{
     constructor(props){
         super(props);
-        this.state = { textoBoton:"Agregar a favoritos" 
+        this.state = { textoBoton:"Agregar a favoritos 👍🏻" 
         }
     }
     componentDidMount(){
@@ -13,7 +13,7 @@ class CancionesItem extends Component{
 
         if(recuperoStorage.includes(this.props.cancion.id)){   
             this.setState({
-                textoBoton: "Quitar de favoritos"
+                textoBoton: "Quitar de favoritos 👎🏻"
             })
         }
     }
@@ -31,14 +31,14 @@ favoritos(id){
         arrayFavoritos = arrayFavoritos.filter( unId => unId !== id);
 
         this.setState({
-            textoBoton: "Agregar a Favoritos"
+            textoBoton: "Agregar a Favoritos 👍🏻"
         })
 
 
     } else {
         arrayFavoritos.push(id);
         this.setState({
-            textoBoton: "Quitar de favoritos"
+            textoBoton: "Quitar de favoritos 👎🏻"
         })
     }
 

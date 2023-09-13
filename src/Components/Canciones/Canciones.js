@@ -6,7 +6,7 @@ class Canciones extends Component {
     super();
     this.state = {
       canciones: [],
-      filtro: "", // Agregar un estado para almacenar el filtro
+      filtro: "", // Agrega un estado para almacenar el filtro
     };
   }
 
@@ -36,18 +36,14 @@ class Canciones extends Component {
 
     return (
       <section>
-        <h2 className="cancionespopulares">TOP 100 MUNDIAL</h2>
+        {this.state.canciones.length > 0 ? (
+          <>
+        <h2 className="cancionespopulares">TOP 100 MUNDIAL 🚀</h2>
 
-        {/* Formulario de filtro */}
+    
         <form>
-          <label htmlFor="filtro">Filtrar por nombre de canción:</label>
-          <input
-            type="text"
-            id="filtro"
-            name="filtro"
-            value={filtro}
-            onChange={this.handleFiltroChange}
-          />
+          <label className=''>🔍</label>
+          <input type="text" id="filtro" name="filtro" placeholder='Filtrar por nombre de canción:' value={filtro} onChange={this.handleFiltroChange}/>
         </form>
 
         <article className="articleCanciones">
@@ -67,6 +63,8 @@ class Canciones extends Component {
             <p className='cargando'>No se encontraron canciones</p>
           )}
         </article>
+        </>
+         ):<p className='cargando'>Loading... ⏳</p>}
       </section>
     );
   }

@@ -44,7 +44,7 @@ class Adetail extends Component {
                 {album.tracks.data.map((cancion)=><Link to={`/tdetail/${cancion.id}`}><ul>- {cancion.title}</ul></Link>)}
           </div>
           
-        ): <p className='cargando'>Loading...</p>}
+        ): <p className='cargando'>Loading... ⏳</p>}
 
             
           

@@ -14,7 +14,7 @@ class Formulario extends Component{
 
     controlarCambios(event){
         console.log('se ejecuta')
-        this.setState({valor: event.target.value}, //agarrar el valor que pusieron en el imput
+        this.setState({valor: event.target.value}, //agarra valor del input
         ()=> this.props.actualizar(this.state.valor)
         )
     }    
@@ -22,7 +22,8 @@ class Formulario extends Component{
     render(){
         return(
                  <form className='form' onSubmit={(event) => this.evitarSubmit(event)}>
-                  <input className='imputForm' type='text' onChange={(event)=> this.controlarCambios(event)} value={this.state.valor}/>
+                    <label className='nombrecancion'>🔍</label>
+                  <input className='imputForm' placeholder='Buscar por canción o artista:' type='text' onChange={(event)=> this.controlarCambios(event)} value={this.state.valor}/>
            </form>
 
         )

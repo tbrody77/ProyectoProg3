@@ -53,21 +53,8 @@ class Resultados extends Component {
 
     return (
       <section>
-        
         <Formulario actualizar={(valor)=>this.actualizarBusqueda(valor)}></Formulario>
 
-
-        {/* Formulario de filtro */}
-        <form>
-          <label htmlFor="filtro">Filtrar por nombre de canción:</label>
-          <input
-            type="text"
-            id="filtro"
-            name="filtro"
-            value={filtro}
-            onChange={this.handleFiltroChange}
-          />
-        </form>
 
         <article className="articleCanciones">
           {cancionesFiltradas.length > 0 ? (
@@ -83,7 +70,7 @@ class Resultados extends Component {
               );
             })
           ) : (
-            <p className='cargando'>No se encontraron canciones</p>
+            <p className='cargando'> ⛔️ No se encontraron resultados, buscá nuevamente ⛔️</p>
           )}
         </article>
       </section>

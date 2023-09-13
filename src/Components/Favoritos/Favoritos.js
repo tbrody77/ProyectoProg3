@@ -6,6 +6,7 @@ class Favoritos extends Component{
         super();
         this.state = {
             track:[],
+            favoritos:[]
         }
     }
     componentDidMount(){
@@ -33,19 +34,22 @@ class Favoritos extends Component{
         }
     }
     render(){
+        
          return(
             <section>
                 
+
                 <article className="articleCanciones">
                     {this.state.track.length ? (
-                    <><h1 className='cancionespopulares'>Canciones Favoritas</h1>
+                    <><h1 className='cargando'>Canciones Favoritas</h1>
                     {this.state.track.map((cancion) => {
                         return (
                         <CancionesItem cancion = {cancion}></CancionesItem>
                         );
                     })}</>
-                    ):<p className='cargando'> Loading...</p>}
+                    ):<p className='cargando'> 🚨 No tenés canciones favoritas 🚨</p>}
                     </article>
+                
                     </section>
          )
     }
