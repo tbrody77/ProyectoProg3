@@ -98,11 +98,17 @@
 }
 .myFooter {
     font-family: 'Roboto Condensed', sans-serif;
-    width: 100%; /* Cambia el ancho a 100% para ocupar toda la pantalla */
+    width: 100%;
+    background-color: black; /* Fondo del footer */
+    color: black; /* Color del texto */
     display: flex;
     justify-content: center;
-    margin-top: 105px;
-  }
+    align-items: center; /* Centra verticalmente el contenido */
+    /* position: fixed; */
+    bottom: 0;
+    left: 0;
+}
+
   
 .participantes{
     font-family: 'Roboto Condensed', sans-serif;
@@ -110,8 +116,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: rgba(29, 31, 31, 0.589);
-    color: lightgray
+    background-color: black;
+    color: white
 }
 .cancionespopulares{
     color: black(96, 96, 96, 0.4);
@@ -233,7 +239,7 @@ h6{
     text-align: center;
     padding: 0%;
     margin: 0%;
-    color: black
+    color: white
 }
 .fa-solid{
     font-size: 60px;
@@ -251,7 +257,7 @@ h1{
     width: 150px;
 }
 .divf1{
-    background-color: rgba(29, 31, 31, 0.589)
+    background-color: black
 }
 .gotop1{
     text-decoration: none;
@@ -360,11 +366,12 @@ ul{
 .albums{
     color: wheat;
 }
-.articleCanciones{
+.articleCanciones {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap; /* Permitirá que los elementos pasen a la siguiente fila */
     justify-content: space-around;
 }
+
 .padre{
     text-align: center;
 }
@@ -382,9 +389,8 @@ img{
 }
 .articleAlbum{
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap; /* Permitirá que los elementos pasen a la siguiente fila */
     justify-content: space-around;
-    text-align: center;
 }
 .articleCantantes{
     display: flex;
@@ -470,7 +476,7 @@ img{
         justify-content: flex-start;
     }
     .myFooter{
-        width: 1000px;
+        width: 100%;
         padding: 0%;
         margin: 0%;
     }

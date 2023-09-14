@@ -58,10 +58,10 @@ class Home extends Component {
             </article>
 <br></br>
 <br></br>
-            <h2 className="cancionespopulares">🔥 TOP 5 ALBUMES 🔥</h2>
+            <h2 className="cancionespopulares">🔥 TOP 5 ALBUMS 🔥</h2>
             <Link to={`/albums`}>
               {/* ver todas */}
-              <button className="albumDe">100 albumes más escuchados</button>
+              <button className="albumDe">100 albums más escuchados</button>
             </Link>
             <br></br>
             <br></br>

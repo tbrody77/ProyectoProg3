@@ -5,7 +5,7 @@ function Footer(){
     return(<footer className="myFooter">
         <div className="divf1">
             <img src={logofoot} alt="Logo Proyecto" className="logofoot"></img>
-            <p className="mweb">MSOUND</p>
+            <p className="mweb">  MSOUND</p>
           </div>
         <div className="participantes">
             <p className="participantes">Ariel Bercovich</p>
